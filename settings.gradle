@@ -4,18 +4,19 @@ pluginManagement {
         mavenCentral()
         maven { url 'https://jitpack.io' }
         gradlePluginPortal()
+        maven { url "https://maven.pkg.github.com/supabase-community/supabase-kt" }
     }
 }
 
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
         google()
         mavenCentral()
         maven { url 'https://jitpack.io' }
+        maven { url "https://maven.pkg.github.com/supabase-community/supabase-kt" }
     }
 }
 
 rootProject.name = "ChatMe"
 include(":app")
-
