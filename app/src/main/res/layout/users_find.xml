@@ -1,0 +1,106 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="4dp"
+		android:layout_marginTop="2dp"
+		android:layout_marginRight="4dp"
+		android:layout_marginBottom="2dp"
+		android:padding="3dp"
+		android:background="@android:color/transparent"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:id="@+id/linear4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical">
+			<de.hdodenhof.circleimageview.CircleImageView
+				android:id="@+id/circleimageview1"
+				android:layout_width="48dp"
+				android:layout_height="48dp"
+				android:paddingLeft="3dp"
+				android:paddingTop="3dp"
+				android:paddingRight="1dp"
+				android:paddingBottom="3dp"
+				android:src="@drawable/img_profile_1"
+				app:civ_border_width="0dp"
+				app:civ_border_color="#008DCD"
+				app:civ_circle_background_color="#FFFFFF"
+				app:civ_border_overlay="true" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:gravity="center_vertical"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview1"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="8dp"
+					android:padding="1dp"
+					android:text="Sunny Mavale"
+					android:textSize="14sp"
+					android:textColor="#091C2B" />
+				<ImageView
+					android:id="@+id/verified"
+					android:focusable="false"
+					android:layout_width="17dp"
+					android:layout_height="17dp"
+					android:layout_marginLeft="2dp"
+					android:src="@drawable/verify563_3"
+					android:scaleType="fitCenter"
+					android:layout_gravity="center_horizontal|center_vertical" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linearSubTitle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/subtitle_text"
+					android:focusable="false"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+					android:text="username"
+					android:textSize="12sp"
+					android:textColor="#90A4AE"
+					android:lines="1"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:ellipsize="end"
+					android:scrollHorizontally="true" />
+			</LinearLayout>
+		</LinearLayout>
+		<TextView
+			android:id="@+id/textview2"
+			android:focusable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#2196F3"
+			android:text="View Profile "
+			android:textSize="12sp"
+			android:textColor="#FFFFFF" />
+	</LinearLayout>
+</LinearLayout>

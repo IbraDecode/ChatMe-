@@ -1,0 +1,148 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#292C31">
+
+	<LinearLayout
+		android:id="@+id/linear_header"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="#0C0F18"
+		android:gravity="right"
+		android:orientation="horizontal"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent">
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/textview1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:padding="8dp"
+			android:text="Post Now"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			app:backgroundTint="#4267B2" />
+	</LinearLayout>
+
+	<com.google.android.material.card.MaterialCardView
+		android:id="@+id/upload_progress_card"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:layout_marginStart="8dp"
+		android:layout_marginEnd="8dp"
+		android:visibility="gone"
+		app:cardCornerRadius="8dp"
+		app:cardElevation="4dp"
+		app:layout_constraintTop_toBottomOf="@+id/linear_header"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<ImageView
+				android:id="@+id/imageview_up_symbol"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:src="@drawable/upload"
+				android:scaleType="centerInside" />
+			<TextView
+				android:id="@+id/textview_up_progress"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:paddingStart="8dp"
+				android:text="Uploading... 0%"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<ProgressBar
+				android:id="@+id/progressbar_upload"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:indeterminate="true"
+				style="?android:progressBarStyleSmall" />
+		</LinearLayout>
+	</com.google.android.material.card.MaterialCardView>
+
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:background="#292C31"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical"
+		app:layout_constraintTop_toBottomOf="@+id/upload_progress_card"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent">
+		<LinearLayout
+			android:id="@+id/linear_user"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#0C0F18"
+			android:gravity="center_vertical"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/circleimageview1"
+					android:layout_width="55dp"
+					android:layout_height="55dp"
+					android:layout_marginLeft="10dp"
+					android:src="@drawable/logo"
+					app:civ_border_width="0dp"
+					app:civ_border_color="#008DCD"
+					app:civ_circle_background_color="#FFFFFF" />
+				<LinearLayout
+					android:id="@+id/linear4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:background="@android:color/transparent"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/textview_username"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Sunnymavale"
+						android:textSize="16sp"
+						android:textColor="#EAF6FF" />
+					<TextView
+						android:id="@+id/textview_time"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="23min ago"
+						android:textSize="12sp"
+						android:textColor="#7F8C8D"
+						android:layout_weight="1" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<ImageView
+			android:id="@+id/imageview1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:src="@drawable/camera"
+			android:scaleType="center" />
+		<VideoView
+			android:id="@+id/videoview1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />
+	</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

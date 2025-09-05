@@ -1,0 +1,122 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="4dp"
+		android:background="#488395"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:id="@+id/linear4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<ImageView
+				android:id="@+id/search"
+				android:layout_width="40dp"
+				android:layout_height="33dp"
+				android:padding="8dp"
+				android:src="@drawable/search_1"
+				android:scaleType="centerInside"
+				android:layout_gravity="center_horizontal|center_vertical" />
+			<EditText
+				android:id="@+id/edittext1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="@android:color/transparent"
+				android:textSize="16sp"
+				android:textColor="#FFFFFF"
+				android:hint="Search users.."
+				android:textColorHint="#CFD8DC"
+				android:layout_weight="1" />
+			<ImageView
+				android:id="@+id/imageview_clear"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:padding="3dp"
+				android:src="@drawable/ic_close_black"
+				android:scaleType="centerCrop" />
+		</LinearLayout>
+	</LinearLayout>
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="12dp"
+				android:paddingTop="20dp"
+				android:paddingRight="8dp"
+				android:paddingBottom="8dp"
+				android:background="@android:color/transparent"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<ImageView
+					android:id="@+id/group"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:src="@drawable/newgroup"
+					android:scaleType="centerInside" />
+				<TextView
+					android:id="@+id/textview2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Create new group "
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#607D8B" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear6"
+				android:layout_width="match_parent"
+				android:layout_height="5dp"
+				android:padding="8dp"
+				android:background="#E0E0E0"
+				android:orientation="horizontal" />
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="vertical">
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/recyclerview1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					tools:listitem="@layout/users_find" />
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingLeft="8dp"
+					android:paddingTop="8dp"
+					android:paddingRight="20dp"
+					android:paddingBottom="8dp"
+					android:gravity="right"
+					android:text="Show All users..."
+					android:textSize="12sp"
+					android:textColor="#607D8B" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

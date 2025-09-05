@@ -1,0 +1,169 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear_bg"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="#303032"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear_horiline"
+			android:layout_width="66dp"
+			android:layout_height="10dp"
+			android:layout_marginBottom="20dp"
+			android:padding="8dp"
+			android:background="#EEEEEE"
+			android:orientation="horizontal" />
+		<TextView
+			android:id="@+id/textview_hint"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="5dp"
+			android:padding="8dp"
+			android:text="Just Swipe message left to reply! 😀"
+			android:textSize="10sp"
+			android:textColor="#9E9E9E" />
+		<LinearLayout
+			android:id="@+id/linear_main"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="@android:color/transparent"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/reply_line"
+				android:layout_width="200dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="2dp"
+				android:padding="2dp"
+				android:background="#39393B"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:layout_gravity="left">
+				<ImageView
+					android:id="@+id/reply_img"
+					android:layout_width="28dp"
+					android:layout_height="28dp"
+					android:layout_marginLeft="6dp"
+					android:layout_marginRight="1dp"
+					android:padding="2dp"
+					android:src="@drawable/ic_reply_all_black"
+					android:scaleType="centerInside" />
+				<TextView
+					android:id="@+id/textview_reply"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="2dp"
+					android:paddingTop="8dp"
+					android:paddingRight="8dp"
+					android:paddingBottom="8dp"
+					android:text="REPLY "
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#448AFF" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/Delete_line"
+				android:layout_width="200dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="2dp"
+				android:padding="2dp"
+				android:background="#39393B"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:layout_gravity="left">
+				<ImageView
+					android:id="@+id/delete_img"
+					android:layout_width="28dp"
+					android:layout_height="28dp"
+					android:layout_marginLeft="6dp"
+					android:padding="2dp"
+					android:src="@drawable/message_delete"
+					android:scaleType="centerInside" />
+				<TextView
+					android:id="@+id/textview_delete"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="2dp"
+					android:paddingTop="8dp"
+					android:paddingRight="8dp"
+					android:paddingBottom="8dp"
+					android:text="DELETE"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#F44336" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/copy_line"
+				android:layout_width="200dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="2dp"
+				android:padding="2dp"
+				android:background="#39393B"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:layout_gravity="left">
+				<ImageView
+					android:id="@+id/copy_img"
+					android:layout_width="28dp"
+					android:layout_height="28dp"
+					android:layout_marginLeft="6dp"
+					android:padding="2dp"
+					android:src="@drawable/ux_7_3"
+					android:scaleType="centerInside" />
+				<TextView
+					android:id="@+id/textview_copy"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="2dp"
+					android:paddingTop="8dp"
+					android:paddingRight="8dp"
+					android:paddingBottom="8dp"
+					android:text="COPY TEXT"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#795548" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/EditMessage_line"
+				android:layout_width="200dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="2dp"
+				android:padding="2dp"
+				android:background="#39393B"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:layout_gravity="left">
+				<ImageView
+					android:id="@+id/edit_img"
+					android:layout_width="28dp"
+					android:layout_height="28dp"
+					android:layout_marginLeft="6dp"
+					android:padding="5dp"
+					android:src="@drawable/ux_7_1"
+					android:scaleType="centerInside" />
+				<TextView
+					android:id="@+id/textview_edi"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="2dp"
+					android:paddingTop="8dp"
+					android:paddingRight="8dp"
+					android:paddingBottom="8dp"
+					android:text="EDIT MESSAGE"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#0277BD" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

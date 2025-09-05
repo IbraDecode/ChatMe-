@@ -1,0 +1,77 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/top"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:padding="8dp"
+		android:background="#FFFFFF"
+		android:orientation="horizontal" />
+	<LinearLayout
+		android:id="@+id/main"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="#FFFFFF"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical"
+		android:layout_weight="1">
+		<ImageView
+			android:id="@+id/icon"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:padding="10dp"
+			android:src="@drawable/ban"
+			android:scaleType="fitCenter" />
+		<TextView
+			android:id="@+id/textview3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Why I'm Getting ban\?"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:textColor="#000000" />
+		<ScrollView
+			android:id="@+id/slider"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+			<TextView
+				android:id="@+id/textview2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#FFFFFF"
+				android:text="Our Valuable User! your account has been blocked for not following the community rules! The contents listed below will cause your account to be blocked!\n\n-Using sexually explicit chat,images, audio and profile picture.\n\n-Constantly notifying and spamming unnecessarily innocent users.\n\n-Constantly violating community rules\n\nIf you do not follow these rules, your account will be blocked forever and your account will be blocked because you do not follow these rules!\n\nWe are trying to provide a fair environment for everyone! \n\nThanks for your understanding❤️\n//Tpass Apps by sunnymavale..\n\n\n#Create Request Report and Wait for Confirmation Mail or try again after 72 hrs."
+				android:textSize="16sp"
+				android:textColor="#000000" />
+		</ScrollView>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/bottom"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:background="#FFFFFF"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/exit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="8dp"
+			android:layout_marginBottom="10dp"
+			android:padding="8dp"
+			android:background="#E74C3C"
+			android:text="Create Appeal Report &amp; Exit"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF" />
+	</LinearLayout>
+</LinearLayout>

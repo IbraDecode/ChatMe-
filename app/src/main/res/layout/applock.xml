@@ -1,0 +1,78 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#1A1A1A"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+		<ImageView
+			android:id="@+id/imageview1"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:src="@drawable/ic_lock_grey"
+			android:scaleType="centerCrop" />
+		<TextView
+			android:id="@+id/textview2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="LOCKED"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="#488395" />
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="50dp"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/textview1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Enter Passcode or Use Fingerprint to Unlock"
+				android:textSize="10sp"
+				android:textColor="#E2F8EC" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<EditText
+				android:id="@+id/passcode_edit"
+				android:layout_width="150dp"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="@android:color/transparent"
+				android:gravity="center_horizontal|center_vertical"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#3A6367"
+				android:hint=" • • • • "
+				android:textColorHint="#7F8C8D"
+				android:inputType="textPassword" />
+		</LinearLayout>
+		<ImageView
+			android:id="@+id/biomatric_image"
+			android:layout_width="45dp"
+			android:layout_height="45dp"
+			android:layout_marginTop="20dp"
+			android:padding="8dp"
+			android:background="@drawable/circle_background"
+			android:src="@drawable/biometric__2"
+			android:scaleType="centerInside" />
+	</LinearLayout>
+</LinearLayout>

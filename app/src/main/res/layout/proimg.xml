@@ -1,0 +1,65 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/background"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="20dp"
+		android:background="#F5F5F5"
+		android:orientation="vertical">
+		<ImageView
+			android:id="@+id/close"
+			android:focusable="false"
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:padding="4dp"
+			android:background="@android:color/transparent"
+			android:src="@drawable/ico_2"
+			android:scaleType="centerInside" />
+		<ImageView
+			android:id="@+id/imageview1"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="200dp"
+			android:src="@drawable/brw"
+			android:scaleType="fitCenter" />
+		<TextView
+			android:id="@+id/t1"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:layout_marginBottom="10dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="user id"
+			android:textSize="18sp"
+			android:textColor="#44926A" />
+		<TextView
+			android:id="@+id/t2"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="uid-63837292"
+			android:textSize="14sp"
+			android:textColor="#BDBDBD"
+			android:lines="2" />
+		<TextView
+			android:id="@+id/b2"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="25dp"
+			android:padding="12dp"
+			android:background="#58B77D"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="Save to Gallery"
+			android:textSize="14sp"
+			android:textColor="#FFFFFF" />
+	</LinearLayout>
+</LinearLayout>

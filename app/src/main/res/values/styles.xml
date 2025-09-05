@@ -1,0 +1,17 @@
+<resources>
+<style name="TransparentBottomSheetTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <item name="bottomSheetStyle">@style/TransparentBottomSheetStyle</item>
+</style>
+
+<style name="TransparentBottomSheetStyle" parent="Widget.MaterialComponents.BottomSheet">
+    <item name="background">@android:color/transparent</item>
+</style>
+<style name="BottomSheetDimTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <item name="android:backgroundDimEnabled">true</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:windowNoTitle">true</item>
+</style>
+
+</resources>

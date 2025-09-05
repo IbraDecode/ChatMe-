@@ -1,0 +1,314 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:layout_weight="1">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="@android:color/transparent"
+			android:gravity="bottom"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/settings"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Settings "
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_weight="1" />
+				<LinearLayout
+					android:id="@+id/linear_logout"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="3dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:layout_gravity="bottom">
+					<TextView
+						android:id="@+id/logout_txt"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingLeft="8dp"
+						android:paddingTop="8dp"
+						android:paddingRight="3dp"
+						android:paddingBottom="8dp"
+						android:text="Logout"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#F44336" />
+					<ImageView
+						android:id="@+id/imageview_logout"
+						android:layout_width="35dp"
+						android:layout_height="25dp"
+						android:src="@drawable/logout_ic"
+						android:scaleType="centerInside"
+						android:layout_gravity="center_horizontal|center_vertical" />
+				</LinearLayout>
+			</LinearLayout>
+			<TextView
+				android:id="@+id/profile_instra"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginRight="5dp"
+				android:padding="8dp"
+				android:text="Account Information"
+				android:textSize="12sp"
+				android:textColor="#9E9E9E" />
+			<LinearLayout
+				android:id="@+id/Myprofile"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<ImageView
+					android:id="@+id/profile"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="3dp"
+					android:src="@drawable/banned_user"
+					android:scaleType="centerCrop"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:transitionName="image" />
+				<TextView
+					android:id="@+id/Myprof_txt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="My Profile"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_weight="1" />
+				<ImageView
+					android:id="@+id/go_to"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="10dp"
+					android:src="@drawable/next"
+					android:scaleType="centerInside"
+					android:layout_gravity="center_horizontal|center_vertical" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/intra_themes"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Customize themes"
+				android:textSize="12sp"
+				android:textColor="#9E9E9E" />
+			<LinearLayout
+				android:id="@+id/linear_darkMode"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginTop="2dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginBottom="2dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<ImageView
+					android:id="@+id/theme_ico"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="3dp"
+					android:src="@drawable/paint_brush"
+					android:scaleType="centerInside"
+					android:layout_gravity="top" />
+				<Switch
+					android:id="@+id/darkmode"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="@android:color/transparent"
+					android:gravity="left|center_vertical"
+					android:text="Dark Mode : OFF"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/intra_security"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Security &amp; App Lock "
+				android:textSize="12sp"
+				android:textColor="#9E9E9E" />
+			<LinearLayout
+				android:id="@+id/linear_applock"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginTop="2dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginBottom="2dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<ImageView
+					android:id="@+id/applock_img"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="8dp"
+					android:src="@drawable/ic_lock_grey"
+					android:scaleType="centerInside"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<Switch
+					android:id="@+id/applock"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="@android:color/transparent"
+					android:gravity="left|center_vertical"
+					android:text="App Lock (Disable)"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/instra_privacy"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Privacy Options"
+				android:textSize="12sp"
+				android:textColor="#9E9E9E" />
+			<LinearLayout
+				android:id="@+id/linear_lock"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginTop="2dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginBottom="2dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<ImageView
+					android:id="@+id/lock_ico"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="8dp"
+					android:src="@drawable/lock_profile"
+					android:scaleType="centerInside"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<Switch
+					android:id="@+id/lock"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="@android:color/transparent"
+					android:gravity="left|center_vertical"
+					android:text="Lock My Profile "
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear_DIS"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginTop="2dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginBottom="2dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<ImageView
+					android:id="@+id/dis_ico"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="3dp"
+					android:src="@drawable/dis"
+					android:scaleType="centerInside"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<Switch
+					android:id="@+id/dis"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="@android:color/transparent"
+					android:gravity="left|center_vertical"
+					android:text="Disappeared Message (inactive)"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/insta_database"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Database &amp; Storage "
+				android:textSize="12sp"
+				android:textColor="#9E9E9E" />
+			<LinearLayout
+				android:id="@+id/linear_clear_saved_accounts"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginTop="2dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginBottom="2dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<ImageView
+					android:id="@+id/clear_saved_accounts"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="6dp"
+					android:src="@drawable/delete_user_accounts"
+					android:scaleType="centerInside"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<TextView
+					android:id="@+id/acc_clear_info"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Clear Saved Accounts Data"
+					android:textSize="14sp"
+					android:textColor="#000000"
+					android:layout_weight="1" />
+				<TextView
+					android:id="@+id/textview4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Clear Data"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#EF5350" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear_blank"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="horizontal"
+				android:layout_weight="1" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

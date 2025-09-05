@@ -1,0 +1,120 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="#1A1A1A"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+		<de.hdodenhof.circleimageview.CircleImageView
+			android:id="@+id/icon"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:padding="3dp"
+			android:background="@drawable/t1s"
+			android:src="@drawable/ic_block_grey"
+			app:civ_border_width="2dp"
+			app:civ_border_color="#000000"
+			app:civ_circle_background_color="#FFFFFF"
+			app:civ_border_overlay="true" />
+		<LinearLayout
+			android:id="@+id/linear4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/groupename"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="ChatMe Official"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="#EAF6FF" />
+			<TextView
+				android:id="@+id/adminTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Admin : Sunnymavale"
+				android:textSize="12sp"
+				android:textColor="#8EC4D4" />
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/members"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Group • 90 Members"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF" />
+				<TextView
+					android:id="@+id/button1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Leave"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#E74C3C" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linear2"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:background="#212121"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+		<ListView
+			android:id="@+id/ListView1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:dividerHeight="0dp"
+			android:divider="@null"
+			android:choiceMode="none"
+			tools:listitem="@layout/member_info" />
+		<LinearLayout
+			android:id="@+id/linear_noinfo"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<ImageView
+				android:id="@+id/icon_cloud"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_cloud_off_white"
+				android:scaleType="center" />
+			<TextView
+				android:id="@+id/noinfo_txt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="There is no information available."
+				android:textSize="14sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

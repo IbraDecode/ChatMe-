@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Track for ON state: Blue background with padding -->
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#007BA7" /> <!-- Color -->
+                    <corners android:radius="50dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Track for OFF state: Gray background with padding -->
+    <item>
+        <layer-list>
+            <item android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#E0E0E0" /> <!-- Light gray color -->
+                    <corners android:radius="50dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>
